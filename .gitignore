@@ -26,3 +26,4 @@ build/
 
 # Local bridge configuration
 .env
+.codex/.DS_Store
