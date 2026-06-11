@@ -1,0 +1,14 @@
+interface:
+  display_name: "Roblox Live Debugger"
+  short_description: "Inspect an authorized live Roblox client"
+  default_prompt: "Use $roblox-live-debugger to inspect the connected Roblox development client and diagnose the reported issue."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "roblox-live"
+      description: "Local Roblox live runtime MCP server"
+      transport: "stdio"
+
+policy:
+  allow_implicit_invocation: true

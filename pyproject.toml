@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "robloxliveinstance-mcp"
+version = "0.1.0"
+description = "Codex MCP server for debugging a live Roblox client runtime"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.27,<2",
+]
+
+[project.scripts]
+robloxliveinstance-mcp = "robloxliveinstance_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robloxliveinstance_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
