@@ -1,4 +1,4 @@
-# Codex MCP Implementation Plan
+# Roblox MCP Implementation Plan
 
 ## Goal
 Build an in-game Roblox MCP tool for debugging a live development game. It should allow approved dev team members to attach securely, explore instance structure, read instance properties, inspect script bytecode, and execute dynamic Luau code.

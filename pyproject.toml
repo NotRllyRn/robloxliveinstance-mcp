@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "robloxliveinstance-mcp"
 version = "0.1.0"
-description = "Codex MCP server for debugging a live Roblox client runtime"
+description = "MCP server for debugging a live Roblox client runtime"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

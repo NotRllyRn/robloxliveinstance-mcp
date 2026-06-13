@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "roblox-live": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "/absolute/path/to/robloxliveinstance-mcp/.venv/bin/robloxliveinstance-mcp"
+      ],
+      "environment": {
+        "ROBLOX_LIVE_MCP_TOKEN": "replace-with-a-long-random-token",
+        "ROBLOX_LIVE_MCP_PORT": "8766"
+      }
+    }
+  },
+  "skills": {
+    "paths": [
+      "/absolute/path/to/robloxliveinstance-mcp/skills"
+    ]
+  }
+}

@@ -12,7 +12,7 @@ def register(mcp: FastMCP[Any], registry: SessionRegistry) -> None:
     @mcp.tool()
     async def execute_luau(
         code: str,
-        chunk_name: str = "codex_live_eval",
+        chunk_name: str = "roblox_live_eval",
         session_id: str | None = None,
     ) -> dict[str, Any]:
         """Execute arbitrary Luau in an authorized live client and capture output."""

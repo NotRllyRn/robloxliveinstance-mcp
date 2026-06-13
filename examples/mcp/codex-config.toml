@@ -1,0 +1,7 @@
+[mcp_servers.roblox-live]
+command = "/absolute/path/to/robloxliveinstance-mcp/.venv/bin/robloxliveinstance-mcp"
+args = []
+
+[mcp_servers.roblox-live.env]
+ROBLOX_LIVE_MCP_TOKEN = "replace-with-a-long-random-token"
+ROBLOX_LIVE_MCP_PORT = "8766"

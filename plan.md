@@ -2,7 +2,7 @@
 
 ## Goal And Boundaries
 
-Build a modular MCP server that lets Codex inspect and debug an authorized live
+Build a modular MCP server that lets AI coding clients inspect and debug an authorized live
 Roblox development client. The implementation is client-only: it can inspect the
 full client-visible DataModel and executor-visible scripts, but it cannot reveal
 authoritative server-only instances or state.
@@ -12,7 +12,7 @@ and must never be shipped as a general-purpose production backdoor.
 
 ## Implemented Architecture
 
-### Codex-facing MCP server
+### MCP server
 
 - Python package using the stable `mcp` 1.x SDK and stdio transport.
 - FastMCP server instructions explain session routing, client-only scope,
@@ -113,7 +113,7 @@ and extended payload lengths. HTTP polling uses the same action payloads.
 ## Security Model
 
 - Default listener is `127.0.0.1`, not a public interface.
-- A long explicit token should be set in both Codex MCP configuration and the
+- A long explicit token should be set in both the MCP client configuration and the
   Luau bootstrap configuration.
 - `ROBLOX_LIVE_MCP_PLACE_IDS` should contain only development place IDs.
 - `ROBLOX_LIVE_MCP_USER_IDS` can restrict attachment to development team users.
