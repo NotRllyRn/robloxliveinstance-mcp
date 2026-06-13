@@ -218,7 +218,7 @@ getgenv().ROBLOX_LIVE_MCP_CONFIG = {
 	port = 8766,
 }
 
-loadfile("robloxliveinstance-mcp/luau/Bootstrap.lua")()
+loadfile("luau/Bootstrap.lua")()
 ```
 
 The client attempts `WebSocket.connect` first and falls back to executor
